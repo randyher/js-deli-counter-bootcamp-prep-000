@@ -5,6 +5,7 @@ function takeANumber(katzDeliLine, name){
   return "Welcome, "+name+". You are number "+ parseInt(katzDeliLine.length)+ " in line."
 }
 
+<<<<<<< HEAD
 function nowServing(katzDeliLine){
   if (katzDeliLine.length==0){
   return "There is nobody waiting to be served!"
@@ -28,4 +29,14 @@ function currentLine(katzDeliLine){
 var outputs= "The line is currently:"+ output
 outputs=outputs.slice(0,-1)
 return outputs
+=======
+
+function nowServing(){
+  if (katzDeli.length==0){
+  return "There is nobody waiting to be served!"
+  }
+  else {
+  return `Currently serving ${katzDeli.shift()}.`
+  }
+>>>>>>> 2b4aba60598dbe5732cd07584d57d4b6c6b1d3fa
 }
